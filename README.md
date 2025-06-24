@@ -1,9 +1,9 @@
-#  Flugo - Sistema de Gestão de Colaboradores
+# Flugo - Sistema de Gestão de Colaboradores
 
 Sistema completo de cadastro e gestão de funcionários com interface multi-step, desenvolvido com **Next.js**, **TypeScript** e **Material UI**.
 
 ## **DEMO ONLINE**
-** Acesse o projeto:** [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)
+** Acesse o projeto:** [https://flugo-hazel.vercel.app/](https://flugo-hazel.vercel.app/)
 
 *Deploy realizado no Vercel - Pronto para uso e avaliação!*
 
@@ -60,12 +60,12 @@ http://localhost:3000
 
 O projeto está hospedado no **Vercel** e pode ser acessado através do link:
 
-** [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)**
+** [https://flugo-hazel.vercel.app/](https://flugo-hazel.vercel.app/)**
 
 ### Informações do Deploy:
 - ✅ **Status**: Production (Ready)
-- ⚡ **Build Time**: ~3 segundos
-- 🚀 **Deploy automático**: Conectado ao GitHub
+- ⚡ **Build Time**: ~58 segundos
+- **Deploy automático**: Conectado ao GitHub
 - 📱 **Responsivo**: Funciona em desktop e mobile
 
 ## Como Usar
@@ -136,7 +136,7 @@ Os dados são persistidos no localStorage do navegador.
 ## Deploy e Produção
 
 ### Vercel (Atual)
-- **URL**: [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)
+- **URL**: [https://flugo-hazel.vercel.app/](https://flugo-hazel.vercel.app/)
 - **Status**: Online
 - **Build**: Automático via GitHub
 - **Performance**: Otimizado para produção
