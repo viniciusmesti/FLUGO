@@ -38,7 +38,7 @@ Sistema completo de cadastro e gestão de funcionários com interface multi-step
 1. **Clone o repositório**
 \`\`\`bash
 git clone https://github.com/seu-usuario/flugo
-cd flugo-employee-management
+cd flugo
 \`\`\`
 
 2. **Instale as dependências**
