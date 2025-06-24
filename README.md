@@ -20,10 +20,6 @@ Sistema completo de cadastro e gestão de funcionários com interface multi-step
 
 ## Como Executar
 
-### Pré-requisitos
-- Node.js 18+ instalado
-- npm ou yarn
-
 ### Instalação
 
 1. **Clone o repositório**
@@ -83,7 +79,7 @@ http://localhost:3000
 
 ## Design System
 
-- **Cor Principal**: Verde vibrante (#22C55E)
+- **Cor Principal**: Verde 
 - **Tipografia**: Inter
 - **Componentes**: Material UI customizados
 - **Layout**: Responsivo e moderno

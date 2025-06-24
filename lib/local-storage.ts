@@ -40,10 +40,20 @@ const sampleEmployees: Employee[] = [
     name: "Clara Costa",
     email: "claracosta@flugo.com",
     department: "Produto",
-    active: false, 
+    active: false,
     createdAt: new Date("2024-02-10"),
   },
 ]
+
+// Interface para dados do localStorage
+interface StoredEmployee {
+  id: string
+  name: string
+  email: string
+  department: string
+  active: boolean
+  createdAt: string 
+}
 
 export const localStorageService = {
   // Buscar todos os funcionários
@@ -59,8 +69,8 @@ export const localStorageService = {
         return sampleEmployees
       }
 
-      const employees = JSON.parse(data)
-      return employees.map((emp: any) => ({
+      const employees: StoredEmployee[] = JSON.parse(data)
+      return employees.map((emp: StoredEmployee) => ({
         ...emp,
         createdAt: new Date(emp.createdAt),
       }))
