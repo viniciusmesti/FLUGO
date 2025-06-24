@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Flugo - Sistema de Gestão de Colaboradores
 
-## Getting Started
+Sistema completo de cadastro e gestão de funcionários com interface multi-step, desenvolvido com **Next.js**, **TypeScript** e **Material UI**.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
+- 📋 **Listagem de Colaboradores**: Visualização em tabela com avatares e status
+- ➕ **Cadastro Multi-Step**: Formulário dividido em etapas com validação
+- 📊 **Barra de Progresso**: Indicador visual do progresso do cadastro
+- ✅ **Validação Completa**: Verificação de campos obrigatórios e formato de email
+- 💾 **Persistência Local**: Dados salvos no localStorage do navegador
+- 🎨 **Interface Moderna**: Design responsivo e intuitivo
+
+## Tecnologias Utilizadas
+
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **Material UI** - Biblioteca de componentes
+- **localStorage** - Persistência de dados local
+
+## Como Executar
+
+### Pré-requisitos
+- Node.js 18+ instalado
+- npm ou yarn
+
+### Instalação
+
+1. **Clone o repositório**
+\`\`\`bash
+git clone [URL_DO_SEU_REPOSITORIO]
+cd flugo-employee-management
+\`\`\`
+
+2. **Instale as dependências**
+\`\`\`bash
+npm install
+\`\`\`
+
+3. **Execute o projeto**
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Acesse no navegador**
+\`\`\`
+http://localhost:3000
+\`\`\`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Como Usar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Visualizar Colaboradores**: A tela principal mostra todos os funcionários cadastrados
+2. **Adicionar Novo Colaborador**: Clique no botão "Novo Colaborador"
+3. **Preencher Informações Básicas**: Nome, email e status ativo/inativo
+4. **Selecionar Departamento**: Escolha o departamento na segunda etapa
+5. **Finalizar Cadastro**: O funcionário aparecerá imediatamente na lista
 
-## Learn More
+## Funcionalidades Implementadas
 
-To learn more about Next.js, take a look at the following resources:
+- ✅ Interface fiel ao design fornecido
+- ✅ Formulário multi-step funcional
+- ✅ Validação de campos obrigatórios
+- ✅ Validação de formato de email
+- ✅ Persistência de dados local
+- ✅ Atualização automática da lista
+- ✅ Design responsivo
+- ✅ Feedback visual de progresso
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+\`\`\`
+├── app/
+│   ├── layout.tsx          # Layout principal
+│   └── page.tsx            # Página inicial
+├── components/
+│   └── employee-registration-modal.tsx  # Modal de cadastro
+├── lib/
+│   ├── local-storage.ts    # Serviço de persistência
+│   ├── theme.ts           # Tema Material UI
+│   └── definitions.ts     # Tipos TypeScript
+└── package.json
+\`\`\`
 
-## Deploy on Vercel
+## Design System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Cor Principal**: Verde vibrante (#22C55E)
+- **Tipografia**: Inter
+- **Componentes**: Material UI customizados
+- **Layout**: Responsivo e moderno
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Scripts Disponíveis
+
+\`\`\`bash
+npm run dev      # Executa em modo desenvolvimento
+npm run build    # Gera build de produção
+npm run start    # Executa build de produção
+npm run lint     # Executa linter
+\`\`\`
+
+## Dados de Exemplo
+
+O sistema vem com alguns funcionários de exemplo para demonstração. Os dados são persistidos no localStorage do navegador.
+
+## Deploy
+
+O projeto está pronto para deploy no **Vercel**, **Netlify** ou qualquer plataforma que suporte Next.js.
+
+Para deploy no Vercel:
+1. Conecte seu repositório GitHub
+2. O deploy será automático (sem variáveis de ambiente necessárias)
+
+---
+
+**Desenvolvido para demonstração de habilidades em React/Next.js + TypeScript + Material UI**
