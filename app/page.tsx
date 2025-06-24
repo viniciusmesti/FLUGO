@@ -22,9 +22,9 @@ import {
   IconButton,
 } from "@mui/material"
 
-import { localStorageService } from "@/lib/local-storage"
-import type { Employee } from "@/lib/definitions"
-import EmployeeRegistrationModal from "@/components/employee-registration-modal"
+import { localStorageService } from "../lib/local-storage"
+import type { Employee } from "../lib/definitions"
+import EmployeeRegistrationModal from "../components/employee-registration-modal"
 
 const theme = createTheme({
   palette: {

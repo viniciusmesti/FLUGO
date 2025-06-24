@@ -20,7 +20,7 @@ import {
   Link,
 } from "@mui/material"
 import { Check as CheckIcon, Person as PersonIcon } from "@mui/icons-material"
-import { localStorageService } from "@/lib/local-storage"
+import { localStorageService } from "../lib/local-storage"
 
 interface EmployeeRegistrationModalProps {
   open: boolean
