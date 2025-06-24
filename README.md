@@ -2,6 +2,13 @@
 
 Sistema completo de cadastro e gestão de funcionários com interface multi-step, desenvolvido com **Next.js**, **TypeScript** e **Material UI**.
 
+## **DEMO ONLINE**
+** Acesse o projeto:** [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)
+
+*Deploy realizado no Vercel - Pronto para uso e avaliação!*
+
+---
+
 ## Funcionalidades
 
 - 📋 **Listagem de Colaboradores**: Visualização em tabela com avatares e status
@@ -10,6 +17,7 @@ Sistema completo de cadastro e gestão de funcionários com interface multi-step
 - ✅ **Validação Completa**: Verificação de campos obrigatórios e formato de email
 - 💾 **Persistência Local**: Dados salvos no localStorage do navegador
 - 🎨 **Interface Moderna**: Design responsivo e intuitivo
+- 👤 **Usuários de Exemplo**: Dados pré-carregados para demonstração
 
 ## Tecnologias Utilizadas
 
@@ -17,14 +25,19 @@ Sistema completo de cadastro e gestão de funcionários com interface multi-step
 - **TypeScript** - Tipagem estática
 - **Material UI** - Biblioteca de componentes
 - **localStorage** - Persistência de dados local
+- **Vercel** - Plataforma de deploy
 
-## Como Executar
+## Como Executar Localmente
+
+### Pré-requisitos
+- Node.js 18+ instalado
+- npm ou yarn
 
 ### Instalação
 
 1. **Clone o repositório**
 \`\`\`bash
-git clone [URL_DO_SEU_REPOSITORIO]
+git clone https://github.com/seu-usuario/flugo-employee-management
 cd flugo-employee-management
 \`\`\`
 
@@ -43,7 +56,19 @@ npm run dev
 http://localhost:3000
 \`\`\`
 
-## 📱 Como Usar
+## Deploy no Vercel
+
+O projeto está hospedado no **Vercel** e pode ser acessado através do link:
+
+** [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)**
+
+### Informações do Deploy:
+- ✅ **Status**: Production (Ready)
+- ⚡ **Build Time**: ~3 segundos
+- 🚀 **Deploy automático**: Conectado ao GitHub
+- 📱 **Responsivo**: Funciona em desktop e mobile
+
+## Como Usar
 
 1. **Visualizar Colaboradores**: A tela principal mostra todos os funcionários cadastrados
 2. **Adicionar Novo Colaborador**: Clique no botão "Novo Colaborador"
@@ -61,28 +86,33 @@ http://localhost:3000
 - ✅ Atualização automática da lista
 - ✅ Design responsivo
 - ✅ Feedback visual de progresso
+- ✅ Dados de exemplo pré-carregados
+- ✅ Status ativo/inativo com cores diferenciadas
 
 ## Estrutura do Projeto
 
 \`\`\`
 ├── app/
 │   ├── layout.tsx          # Layout principal
-│   └── page.tsx            # Página inicial
+│   ├── page.tsx            # Página inicial
+│   └── globals.css         # Estilos globais
 ├── components/
 │   └── employee-registration-modal.tsx  # Modal de cadastro
 ├── lib/
 │   ├── local-storage.ts    # Serviço de persistência
-│   ├── theme.ts           # Tema Material UI
-│   └── definitions.ts     # Tipos TypeScript
+│   └── definitions.ts      # Tipos TypeScript
+├── public/
+│   └── user-avatar.png     # Avatar do usuário
 └── package.json
 \`\`\`
 
 ## Design System
 
-- **Cor Principal**: Verde 
+- **Cor Principal**: Verde vibrante (#00D97E)
 - **Tipografia**: Inter
 - **Componentes**: Material UI customizados
 - **Layout**: Responsivo e moderno
+- **Status**: Chips coloridos (verde para ativo, vermelho para inativo)
 
 ## Scripts Disponíveis
 
@@ -95,16 +125,41 @@ npm run lint     # Executa linter
 
 ## Dados de Exemplo
 
-O sistema vem com alguns funcionários de exemplo para demonstração. Os dados são persistidos no localStorage do navegador.
+O sistema vem com funcionários de exemplo para demonstração:
+- **Fernanda Torres** - Design - Ativo
+- **Joana D'Arc** - TI - Ativo  
+- **Mari Froes** - Marketing - Ativo
+- **Clara Costa** - Produto - Inativo
 
-## Deploy
+Os dados são persistidos no localStorage do navegador.
 
-O projeto está pronto para deploy no **Vercel**, **Netlify** ou qualquer plataforma que suporte Next.js.
+## Deploy e Produção
 
-Para deploy no Vercel:
-1. Conecte seu repositório GitHub
-2. O deploy será automático (sem variáveis de ambiente necessárias)
+### Vercel (Atual)
+- **URL**: [https://flugo-gray.vercel.app/](https://flugo-gray.vercel.app/)
+- **Status**: Online
+- **Build**: Automático via GitHub
+- **Performance**: Otimizado para produção
+
+### Para fazer seu próprio deploy:
+1. Conecte seu repositório GitHub ao Vercel
+2. Configure as seguintes opções:
+   - **Build Command**: \`next build\` (padrão)
+   - **Output Directory**: \`Next.js default\` (padrão)
+   - **Install Command**: \`npm install\` (padrão)
+   - **Environment Variables**: Nenhuma necessária
+3. Deploy será automático!
+
+## Vantagens da Implementação
+
+- **Sem dependências externas**: Funciona sem Firebase ou APIs
+- **Deploy simples**: Sem variáveis de ambiente
+- **Demonstração imediata**: Clone → Install → Run → Funciona!
+- **Código limpo**: TypeScript, organizado, comentado
+- **Performance**: Build otimizado (189 kB total)
 
 ---
 
-**Desenvolvido para demonstração de habilidades em React/Next.js + TypeScript + Material UI**
+** Desenvolvido para demonstração de habilidades em React/Next.js + TypeScript + Material UI**
+
+** Pronto para avaliação técnica e uso em produção!**
