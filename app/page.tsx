@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 import {
   Container,
-  Paper,
+  Paper, 
   Table,
   TableBody,
   TableCell,
@@ -21,6 +21,7 @@ import {
   Toolbar,
   IconButton,
 } from "@mui/material"
+
 import { localStorageService } from "@/lib/local-storage"
 import type { Employee } from "@/lib/definitions"
 import EmployeeRegistrationModal from "@/components/employee-registration-modal"
